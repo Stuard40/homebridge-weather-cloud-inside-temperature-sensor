@@ -1,0 +1,57 @@
+{
+  "pluginAlias": "WeatherCloudInsideTemperature",
+  "pluginType": "accessory",
+  "headerDisplay": "Weather Cloud Inside Temperature Sensor for Homebridge",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 3,
+        "required": true,
+        "title": "Login",
+        "description": "Name of accessory."
+      },
+      "login": {
+        "type": "string",
+        "minLength": 3,
+        "required": true,
+        "title": "Login",
+        "description": "Your login into Weather Cloud."
+      },
+      "password": {
+        "type": "string",
+        "title": "Password",
+        "required": true,
+        "description": "Your password into Weather Cloud."
+      },
+      "deviceCode": {
+        "type": "string",
+        "required": true,
+        "title": "Device Code",
+        "description": "https://app.weathercloud.net/d{Device Code}"
+      },
+      "statusCache": {
+        "type": "number",
+        "required": true,
+        "title": "Status cache timeout",
+        "description": "Status cache timeout in milliseconds, Weather Cloud API accept new data each 10 minutes for free users and 1 minute for Pro and Premium users",
+        "placeholder": 420000
+      },
+      "pullInterval": {
+        "type": "number",
+        "required": true,
+        "title": "Pull Interval",
+        "description": "Number of millis between attempts for load new data from Weather Cloud",
+        "placeholder": 420000
+      }
+    },
+    "layout": [
+      "login",
+      "password",
+      "deviceCode",
+      "statusCache",
+      "pullInterval"
+    ]
+  }
+}

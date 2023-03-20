@@ -1,7 +1,7 @@
 {
-  "name": "homebridge-http-temperature-sensor",
-  "version": "1.0.10",
-  "description": "Http temperature sensor for Homebridge",
+  "name": "homebridge-weather-cloud-inside-temperature-sensor",
+  "version": "1.0.0",
+  "description": "Weather Cloud Inside Temperature Sensor for Homebridge",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin"
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Supereg/homebridge-http-temperature-sensor"
+    "url": "https://github.com/Stuard40/homebridge-weather-cloud-inside-temperature-sensor"
   },
   "bugs": {
-    "url": "https://github.com/Supereg/homebridge-http-temperature-sensor/issues"
+    "url": "https://github.com/Stuard40/homebridge-weather-cloud-inside-temperature-sensor/issues"
   },
   "engines": {
     "node": ">=10.17.0",
